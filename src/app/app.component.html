@@ -1,0 +1,37 @@
+<style>
+body {
+ background-image: url('img_girl.jpg');
+}
+</style>
+
+<nb-layout>
+    <nb-layout-header fixed>
+      <nb-user size="giant"
+             name="Sami Chibani"
+             title="System Engineer"
+             picture="https://pbs.twimg.com/profile_images/880856569445052416/YlHeaEuC_200x200.jpg"
+             [showTitle]="false">
+    </nb-user>
+    </nb-layout-header>
+    <nb-layout-footer fixed>
+      <nb-actions size='small'>
+        <nb-action icon="github" href="https://github.com/telchak"></nb-action>
+        <nb-action icon="twitter" href="https://twitter.com/sami_zdat"></nb-action>
+        <nb-action icon="linkedin" href="https://www.linkedin.com/in/sami-chibani/"></nb-action>
+        <nb-action icon="email" href="mailto:sami.chibani.pro@gmail.com"></nb-action>
+      </nb-actions>
+    </nb-layout-footer>
+
+      <nb-sidebar state="compacted" tag="left-sidebar" #leftSidebar>
+        <nb-menu tag="main-menu" [items]="items">
+        </nb-menu>
+        <nb-icon class="collapse-icon" icon="swap" (click)="toggleCompact()"></nb-icon>
+      </nb-sidebar>
+
+      <nb-layout-column class="image-container">
+        <router-outlet></router-outlet>
+      </nb-layout-column>
+
+
+
+    </nb-layout>

@@ -1,0 +1,32 @@
+.map {
+  max-height: 20%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 -0.5rem;
+}
+
+.card-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.stack-right {
+  float: right;
+  font-weight: bold;
+}
+
+nb-progress-bar ~ nb-progress-bar {
+  margin-top: 1rem;
+}

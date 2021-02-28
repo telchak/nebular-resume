@@ -1,0 +1,24 @@
+@import '../themes.scss';
+
+@include nb-install-component() {
+
+  .image-container {
+    background-image: nb-theme(url-bg);
+    background-size: cover;
+  }
+
+}
+
+.collapse-icon {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  cursor: pointer;
+}
+
+.no-padding {
+  padding-top: 0px;
+  padding-left: 0px im !important;
+  padding-right: 0px im !important;
+  padding-bottom: 0px im !important;
+}
