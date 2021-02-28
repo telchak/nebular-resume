@@ -7,8 +7,7 @@ import Typed from 'typed.js';
   styleUrls: ['./home-component.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     const options = {
@@ -17,10 +16,9 @@ export class HomeComponent implements OnInit {
       backSpeed: 100,
       showCursor: true,
       cursorChar: '|',
-      loop: true
- };
+      loop: true,
+    };
 
     const typed = new Typed('.typed-element', options);
   }
-
 }

@@ -4,11 +4,10 @@ import { NbRevealCardComponent } from '@nebular/theme';
 @Component({
   selector: 'app-resume-component',
   templateUrl: './resume-component.component.html',
-  styleUrls: ['./resume-component.component.scss']
+  styleUrls: ['./resume-component.component.scss'],
 })
 export class ResumeComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
   @ViewChild('revealByg')
   RevealBygComponent!: NbRevealCardComponent;
 
@@ -21,13 +20,7 @@ export class ResumeComponent implements OnInit {
   @ViewChild('revealLdnr')
   RevealLdnrComponent!: NbRevealCardComponent;
 
-  revealedByg = false;
-  revealedYes = false;
-  revealedEnfa = false;
-  revealedLdnr = false;
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   toggleByg(): void {
     this.RevealBygComponent.toggle();
@@ -44,5 +37,4 @@ export class ResumeComponent implements OnInit {
   toggleLdnr(): void {
     this.RevealLdnrComponent.toggle();
   }
-
 }
